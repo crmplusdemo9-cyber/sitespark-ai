@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiteSpark AI — One-Page Website Builder</title>
+    <meta name="description" content="Build stunning one-page websites in 60 seconds with AI. No code needed.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">SiteSpark<span class="logo-ai">AI</span></span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#features">Features</a>
+                <a href="#builder-demo">Builder</a>
+                <a href="#templates">Templates</a>
+                <a href="#pricing">Pricing</a>
+                <a href="admin.html" class="nav-admin">Admin Panel →</a>
+            </div>
+            <div class="nav-actions">
+                <a href="admin.html" class="btn btn-ghost">Admin Demo</a>
+                <a href="#builder-demo" class="btn btn-primary">Try Builder Free</a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="mesh-gradient"></div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>Now with AI-Powered Domain Setup</span>
+            </div>
+            <h1 class="hero-title">
+                Build Stunning Websites<br>
+                <span class="gradient-text">In 60 Seconds</span>
+            </h1>
+            <p class="hero-subtitle">
+                Describe your business. AI generates a beautiful one-page site with custom 
+                content, images, and a live domain — <strong>no code needed</strong>.
+            </p>
+            <div class="hero-actions">
+                <a href="#builder-demo" class="btn btn-primary btn-lg">
+                    <span>⚡</span> Start Building Free
+                </a>
+                <a href="#features" class="btn btn-glass btn-lg">
+                    See How It Works
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-value" data-target="12847">0</span>
+                    <span class="stat-label">Sites Created</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value" data-target="98">0</span><span class="stat-suffix">%</span>
+                    <span class="stat-label">Satisfaction</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value" data-target="60">0</span><span class="stat-suffix">s</span>
+                    <span class="stat-label">Avg Build Time</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="browser-mockup">
+                <div class="browser-bar">
+                    <div class="browser-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="browser-url">
+                        <span class="lock">🔒</span> yoursite.com
+                    </div>
+                </div>
+                <div class="browser-content" id="browserPreview">
+                    <div class="preview-site">
+                        <div class="preview-nav">
+                            <span class="preview-logo">Sarah Chen</span>
+                            <div class="preview-links">
+                                <span>Work</span><span>About</span><span>Contact</span>
+                            </div>
+                        </div>
+                        <div class="preview-hero">
+                            <h2>Yoga & Wellness Coach</h2>
+                            <p>Transform your life through mindful movement</p>
+                            <button class="preview-btn">Book a Session</button>
+                        </div>
+                        <div class="preview-grid">
+                            <div class="preview-card pc1"></div>
+                            <div class="preview-card pc2"></div>
+                            <div class="preview-card pc3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">How It Works</span>
+                <h2 class="section-title">Three Steps to Your Website</h2>
+                <p class="section-subtitle">No templates to customize. No drag-and-drop frustration. Just describe and deploy.</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card" data-step="1">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">💬</div>
+                    <h3>Describe Your Business</h3>
+                    <p>Tell AI what you do. "Yoga instructor in Portland" or "Tech startup SaaS" — it understands any niche.</p>
+                    <div class="step-visual">
+                        <div class="chat-bubble user">I'm a freelance photographer in NYC specializing in wedding photography</div>
+                        <div class="chat-bubble ai">✨ Generating your photography portfolio with gallery, booking form, and testimonials...</div>
+                    </div>
+                </div>
+                <div class="step-card" data-step="2">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">🎨</div>
+                    <h3>AI Builds Everything</h3>
+                    <p>Headlines, copy, colors, layout, images — all generated in seconds. Pick a template or let AI choose.</p>
+                    <div class="step-visual">
+                        <div class="gen-progress">
+                            <div class="gen-item done">✅ Content generated</div>
+                            <div class="gen-item done">✅ Color scheme selected</div>
+                            <div class="gen-item done">✅ Layout optimized</div>
+                            <div class="gen-item active">⚡ Generating images...</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-card" data-step="3">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">🚀</div>
+                    <h3>Publish with Domain</h3>
+                    <p>One click to go live. Auto-registers your domain via Porkbun ($8-12/yr), sets up DNS, HTTPS — done.</p>
+                    <div class="step-visual">
+                        <div class="domain-demo">
+                            <div class="domain-search">
+                                <input type="text" value="sarahchen.yoga" readonly>
+                                <span class="domain-price">$9.73/yr</span>
+                            </div>
+                            <div class="domain-status">✅ Available → Auto-registered → Live in 5min</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Builder Demo -->
+    <section class="section section-dark" id="builder-demo">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Live Demo</span>
+                <h2 class="section-title">Try the AI Builder</h2>
+                <p class="section-subtitle">Type a business description below and watch AI generate your site in real-time.</p>
+            </div>
+            <div class="builder-demo">
+                <div class="builder-panel">
+                    <div class="builder-steps">
+                        <div class="b-step active" data-bstep="1">
+                            <span class="b-step-num">1</span>
+                            <span>Describe</span>
+                        </div>
+                        <div class="b-step" data-bstep="2">
+                            <span class="b-step-num">2</span>
+                            <span>Template</span>
+                        </div>
+                        <div class="b-step" data-bstep="3">
+                            <span class="b-step-num">3</span>
+                            <span>Customize</span>
+                        </div>
+                        <div class="b-step" data-bstep="4">
+                            <span class="b-step-num">4</span>
+                            <span>Domain</span>
+                        </div>
+                        <div class="b-step" data-bstep="5">
+                            <span class="b-step-num">5</span>
+                            <span>Publish</span>
+                        </div>
+                    </div>
+
+                    <!-- Step 1: Describe -->
+                    <div class="builder-content" id="builderStep1">
+                        <h3>What's your business?</h3>
+                        <textarea id="businessDesc" placeholder="e.g., Freelance photographer in NYC specializing in wedding and portrait photography..."></textarea>
+                        <div class="quick-picks">
+                            <span class="chip" data-desc="Yoga instructor and wellness coach in Portland">🧘 Yoga Coach</span>
+                            <span class="chip" data-desc="Freelance photographer specializing in wedding photography">📸 Photographer</span>
+                            <span class="chip" data-desc="Personal fitness trainer offering online coaching">💪 Fitness Trainer</span>
+                            <span class="chip" data-desc="Digital marketing agency for small businesses">📱 Marketing Agency</span>
+                            <span class="chip" data-desc="Artisan bakery and cafe with delivery">🧁 Bakery & Cafe</span>
+                            <span class="chip" data-desc="Mobile app development startup">💻 Tech Startup</span>
+                        </div>
+                        <button class="btn btn-primary btn-block" id="generateBtn">
+                            <span>⚡</span> Generate with AI
+                        </button>
+                    </div>
+
+                    <!-- Step 2: Template -->
+                    <div class="builder-content hidden" id="builderStep2">
+                        <h3>Choose Your Style</h3>
+                        <div class="template-grid">
+                            <div class="template-card active" data-template="glass">
+                                <div class="template-preview tp-glass"></div>
+                                <span>Glassmorphism</span>
+                            </div>
+                            <div class="template-card" data-template="minimal">
+                                <div class="template-preview tp-minimal"></div>
+                                <span>Minimal Clean</span>
+                            </div>
+                            <div class="template-card" data-template="bold">
+                                <div class="template-preview tp-bold"></div>
+                                <span>Bold & Dark</span>
+                            </div>
+                            <div class="template-card" data-template="gradient">
+                                <div class="template-preview tp-gradient"></div>
+                                <span>Gradient Flow</span>
+                            </div>
+                            <div class="template-card" data-template="zen">
+                                <div class="template-preview tp-zen"></div>
+                                <span>Zen Nature</span>
+                            </div>
+                            <div class="template-card" data-template="neon">
+                                <div class="template-preview tp-neon"></div>
+                                <span>Neon Cyber</span>
+                            </div>
+                        </div>
+                        <div class="builder-nav-btns">
+                            <button class="btn btn-ghost" onclick="goToStep(1)">← Back</button>
+                            <button class="btn btn-primary" onclick="goToStep(3)">Continue →</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Customize -->
+                    <div class="builder-content hidden" id="builderStep3">
+                        <h3>Customize Content</h3>
+                        <div class="customize-fields">
+                            <label>
+                                <span>Headline</span>
+                                <input type="text" id="custHeadline" value="" placeholder="Your main headline">
+                            </label>
+                            <label>
+                                <span>Subheadline</span>
+                                <input type="text" id="custSubhead" value="" placeholder="Supporting text">
+                            </label>
+                            <label>
+                                <span>CTA Button</span>
+                                <input type="text" id="custCta" value="" placeholder="Button text">
+                            </label>
+                            <label>
+                                <span>Primary Color</span>
+                                <div class="color-picker">
+                                    <input type="color" id="custColor" value="#8B5CF6">
+                                    <span id="colorValue">#8B5CF6</span>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="builder-nav-btns">
+                            <button class="btn btn-ghost" onclick="goToStep(2)">← Back</button>
+                            <button class="btn btn-primary" onclick="goToStep(4)">Continue →</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Domain -->
+                    <div class="builder-content hidden" id="builderStep4">
+                        <h3>Get Your Domain</h3>
+                        <div class="domain-checker">
+                            <div class="domain-input-wrap">
+                                <input type="text" id="domainInput" placeholder="yourbusiness">
+                                <select id="domainTld">
+                                    <option>.com</option>
+                                    <option>.io</option>
+                                    <option>.co</option>
+                                    <option>.dev</option>
+                                    <option>.yoga</option>
+                                    <option>.studio</option>
+                                </select>
+                                <button class="btn btn-primary btn-sm" id="checkDomain">Check</button>
+                            </div>
+                            <div id="domainResults" class="domain-results"></div>
+                            <div class="domain-info">
+                                <p>🔒 Free WHOIS privacy via Porkbun</p>
+                                <p>⚡ Auto DNS setup — live in 5 minutes</p>
+                                <p>💰 Starting at $8.56/yr for .com</p>
+                            </div>
+                        </div>
+                        <div class="builder-nav-btns">
+                            <button class="btn btn-ghost" onclick="goToStep(3)">← Back</button>
+                            <button class="btn btn-primary" onclick="goToStep(5)">Continue →</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 5: Publish -->
+                    <div class="builder-content hidden" id="builderStep5">
+                        <h3>Ready to Launch! 🚀</h3>
+                        <div class="publish-summary">
+                            <div class="publish-item">
+                                <span>📄</span>
+                                <div>
+                                    <strong>Site Content</strong>
+                                    <p id="pubContent">AI-generated content ready</p>
+                                </div>
+                                <span class="check">✅</span>
+                            </div>
+                            <div class="publish-item">
+                                <span>🎨</span>
+                                <div>
+                                    <strong>Template</strong>
+                                    <p id="pubTemplate">Glassmorphism</p>
+                                </div>
+                                <span class="check">✅</span>
+                            </div>
+                            <div class="publish-item">
+                                <span>🌐</span>
+                                <div>
+                                    <strong>Domain</strong>
+                                    <p id="pubDomain">yoursite.sitespark.app</p>
+                                </div>
+                                <span class="check">✅</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-block btn-lg" id="publishBtn">
+                            🚀 Publish My Site
+                        </button>
+                        <div id="publishStatus" class="publish-status hidden"></div>
+                        <div class="builder-nav-btns">
+                            <button class="btn btn-ghost" onclick="goToStep(4)">← Back</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Preview -->
+                <div class="preview-panel">
+                    <div class="preview-toolbar">
+                        <div class="preview-devices">
+                            <button class="device-btn active" data-device="desktop">🖥️</button>
+                            <button class="device-btn" data-device="tablet">📱</button>
+                            <button class="device-btn" data-device="mobile">📲</button>
+                        </div>
+                        <span class="preview-label">Live Preview</span>
+                    </div>
+                    <div class="preview-frame" id="previewFrame">
+                        <div class="live-preview" id="livePreview">
+                            <div class="lp-placeholder">
+                                <span>⚡</span>
+                                <p>Describe your business to<br>see the magic happen</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Templates -->
+    <section class="section" id="templates">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">12 Premium Templates</span>
+                <h2 class="section-title">Designs That Convert</h2>
+                <p class="section-subtitle">Each template is AI-optimized for specific industries with built-in conversion best practices.</p>
+            </div>
+            <div class="templates-showcase">
+                <div class="template-showcase-card">
+                    <div class="tsc-preview" style="background: linear-gradient(135deg, rgba(139,92,246,0.3), rgba(6,182,212,0.3)); backdrop-filter: blur(20px);">
+                        <div class="tsc-inner">
+                            <div class="tsc-nav"><span>Portfolio</span></div>
+                            <h4>Creative Work</h4>
+                            <p>Beautiful glassmorphism</p>
+                        </div>
+                    </div>
+                    <h4>Glassmorphism</h4>
+                    <span class="tsc-tag">Best for: Creatives, Agencies</span>
+                </div>
+                <div class="template-showcase-card">
+                    <div class="tsc-preview" style="background: #fafaf9;">
+                        <div class="tsc-inner dark-text">
+                            <div class="tsc-nav"><span>Studio</span></div>
+                            <h4>Clean Design</h4>
+                            <p>Whitespace focused</p>
+                        </div>
+                    </div>
+                    <h4>Minimal Clean</h4>
+                    <span class="tsc-tag">Best for: Consultants, Coaches</span>
+                </div>
+                <div class="template-showcase-card">
+                    <div class="tsc-preview" style="background: linear-gradient(135deg, #1a1a2e, #16213e);">
+                        <div class="tsc-inner">
+                            <div class="tsc-nav"><span>Brand</span></div>
+                            <h4>Bold Impact</h4>
+                            <p>Statement design</p>
+                        </div>
+                    </div>
+                    <h4>Bold & Dark</h4>
+                    <span class="tsc-tag">Best for: Startups, Tech</span>
+                </div>
+                <div class="template-showcase-card">
+                    <div class="tsc-preview" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+                        <div class="tsc-inner">
+                            <div class="tsc-nav"><span>Flow</span></div>
+                            <h4>Gradient Magic</h4>
+                            <p>Smooth transitions</p>
+                        </div>
+                    </div>
+                    <h4>Gradient Flow</h4>
+                    <span class="tsc-tag">Best for: SaaS, Products</span>
+                </div>
+                <div class="template-showcase-card">
+                    <div class="tsc-preview" style="background: linear-gradient(135deg, #2d5016, #4a7c2e);">
+                        <div class="tsc-inner">
+                            <div class="tsc-nav"><span>Zen</span></div>
+                            <h4>Natural Calm</h4>
+                            <p>Earth-toned serenity</p>
+                        </div>
+                    </div>
+                    <h4>Zen Nature</h4>
+                    <span class="tsc-tag">Best for: Wellness, Yoga</span>
+                </div>
+                <div class="template-showcase-card">
+                    <div class="tsc-preview" style="background: #0a0a0a;">
+                        <div class="tsc-inner" style="text-shadow: 0 0 20px #f0f, 0 0 40px #0ff;">
+                            <div class="tsc-nav"><span>Neon</span></div>
+                            <h4>Cyber Glow</h4>
+                            <p>Electric vibes</p>
+                        </div>
+                    </div>
+                    <h4>Neon Cyber</h4>
+                    <span class="tsc-tag">Best for: Gaming, Music, Events</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section section-dark" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Simple Pricing</span>
+                <h2 class="section-title">Start Free, Scale When Ready</h2>
+            </div>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <div class="price-header">
+                        <h3>Free</h3>
+                        <div class="price-amount">$0</div>
+                        <p>Perfect for trying out</p>
+                    </div>
+                    <ul class="price-features">
+                        <li>✅ 1 Published Site</li>
+                        <li>✅ AI Content Generation</li>
+                        <li>✅ All 12 Templates</li>
+                        <li>✅ yoursite.sitespark.app domain</li>
+                        <li>✅ SSL Certificate</li>
+                        <li>❌ Custom Domain</li>
+                        <li>❌ Remove Branding</li>
+                        <li>❌ Analytics</li>
+                    </ul>
+                    <a href="#builder-demo" class="btn btn-ghost btn-block">Get Started</a>
+                </div>
+                <div class="price-card featured">
+                    <div class="price-badge">Most Popular</div>
+                    <div class="price-header">
+                        <h3>Pro</h3>
+                        <div class="price-amount">$19<span>/yr</span></div>
+                        <p>Everything you need</p>
+                    </div>
+                    <ul class="price-features">
+                        <li>✅ 10 Published Sites</li>
+                        <li>✅ AI Content Generation</li>
+                        <li>✅ All 12 Templates</li>
+                        <li>✅ Custom Domain ($8-12/yr extra)</li>
+                        <li>✅ Remove Branding</li>
+                        <li>✅ Analytics Dashboard</li>
+                        <li>✅ Priority Support</li>
+                        <li>✅ Persona Simulator</li>
+                    </ul>
+                    <a href="#builder-demo" class="btn btn-primary btn-block">Start Pro Trial</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waitlist / CTA -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <h2>Join 12,000+ Creators</h2>
+                <p>Get early access to SiteSpark AI and build your first site in 60 seconds.</p>
+                <form class="waitlist-form" id="waitlistForm">
+                    <input type="email" placeholder="your@email.com" id="waitlistEmail" required>
+                    <button type="submit" class="btn btn-primary">Join Waitlist</button>
+                </form>
+                <p class="waitlist-note">Free forever plan included. No credit card required.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">SiteSpark<span class="logo-ai">AI</span></span>
+                    <p>AI-powered one-page websites for everyone.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#templates">Templates</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#builder-demo">Builder</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <a href="#">Documentation</a>
+                    <a href="#">API Reference</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Changelog</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Admin</h4>
+                    <a href="admin.html">Dashboard</a>
+                    <a href="admin.html#users">Users</a>
+                    <a href="admin.html#revenue">Revenue</a>
+                    <a href="admin.html#settings">Settings</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 SiteSpark AI. Built with ❤️ and artificial intelligence.</p>
+                <div class="footer-social">
+                    <a href="#">Twitter</a>
+                    <a href="#">GitHub</a>
+                    <a href="#">Discord</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
